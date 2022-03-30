@@ -6,13 +6,6 @@ import com.blackpig.springframework.beans.factory.config.BeanDefinition;
 
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory{
 
-    /**
-     * 实现具体的bean实例化操作
-     *
-     * @param beanName
-     * @param beanDefinition
-     * @return
-     */
     @Override
     protected Object createBean(String beanName, BeanDefinition beanDefinition) {
         Object bean = null;
@@ -27,4 +20,5 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
         return bean;
     }
+
 }
